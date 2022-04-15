@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="test">Hii</h1>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus praesentium eligendi optio, qui saepe minus eos repellat cumque sunt fugiat repudiandae vero amet minima ipsam doloribus dolorem recusandae blanditiis dolorum!</p>
+    <div>
+        <ul>
+            <li style="color:red">pop</li>
+            <li>push</li>
+            <li>shift</li>
+            <li>Unshift</li>
+        </ul>
+    </div>
+    <script>
+    $(document).ready(function(){
+        var a=$("*").text()//for styling on all tags
+        console.log(a)
+        $("ul li").css("color","blue")
+        $("li:even").css("border","2px solid red")
+        $("ul li:eq(2)").css("border","2px solid blue")
+    })
+  
+
+</script>
+</body>
+</html>

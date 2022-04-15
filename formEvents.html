@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enquiry Form</h1>
+    <form id="btn">
+        <label>Name<input type="text" id="fname"></label><br><br>
+        <label>E-mail<input type="email" id="lname"></label><br><br>
+        
+        <label>Country:
+        <select>
+            <option>India</option>
+            <option>New york</option>
+            <option>Canada</option>
+            <option>France</option>
+        </select>
+    </label><br><br>
+    <button>SUBMIT!</button>
+    </form>
+    <script src="jquery.js"></script>
+    <script>
+    $(document).ready(()=>{
+        $("#fname").focus(()=>{
+            $('#fname').css("background-color","lime")
+        })
+        $("#fname").blur(()=>{
+            $('#fname').css("background-color","pink")
+        })
+        $("#fname").select(()=>{
+            $('#fname').css("background-color","yellow")//after selcting the text in input
+        })
+        $("#btn").submit(()=>{
+            alert("submuitted")
+        })
+    })
+</script>
+    
+</body>
+</html>

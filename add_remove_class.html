@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>hii</h1>
+    <div id="main" class="reject"><p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus praesentium eligendi optio, qui saepe minus eos repellat cumque sunt fugiat repudiandae vero amet minima ipsam doloribus dolorem recusandae blanditiis dolorum!</p></div>
+    <input id="inp" value="Enter your name" >
+    <button>Click me!</button>
+    <style>
+        #container{
+            background-color: aquamarine;
+        }
+    </style>
+    <style>
+        .red {
+          color:red;
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+        $("#main").addClass("insert_class")
+        $("#main").removeClass("reject")
+        $(document).ready(function(){
+            $("button").click(function(){
+              $("h1, p").toggleClass("red");
+            });
+          });
+     
+    })
+    
+</script>
+</body>
+</html>
